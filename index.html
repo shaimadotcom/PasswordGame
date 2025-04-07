@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/emblem.png" />
+  <title>TechNation | IMAAMU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+  <button class="rules-btn">?</button>
+  <div class="rules-overlay">
+    <div class="rules-content">
+      <img src="tecLogoLtext.png" alt="Game Logo" class="rules-logo" />
+      <h2>GAME RULES</h2>
+      <ol class="rules-list">
+        <li>Password must be at least 10 characters</li>
+        <li>Must contain uppercase and lowercase letters</li>
+        <li>Must include numbers and special characters</li>
+        <li>No sequential characters (e.g. abc, 123)</li>
+      </ol>
+      <button class="close-rules">X</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>PASSWORD CHECKER</h1>
+    <input type="password" id="password" placeholder="ENTER YOUR PASSWORD" />
+    <div class="button-container">
+      <button id="checkBtn">CHECK</button>
+      <button id="resetBtn">RESET</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <!-- Sound Elements -->
+  <audio
+    id="clickSound"
+    src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.mp3"
+    preload="auto"
+  ></audio>
+  <audio
+    id="winSound"
+    src="https://assets.mixkit.co/sfx/preview/mixkit-game-level-completed-2059.mp3"
+    preload="auto"
+  ></audio>
+  <audio
+    id="lossSound"
+    src="https://assets.mixkit.co/sfx/preview/mixkit-retro-arcade-lose-2027.mp3"
+    preload="auto"
+  ></audio>
+  <audio
+    id="rulesSound"
+    src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3"
+    preload="auto"
+  ></audio>
+  <!-- Background Music -->
+  <audio
+    id="bgm"
+    src="
+    https://www.fesliyanstudios.com/musicfiles/2021-08-30_-_Boss_Time_-_www.FesliyanStudios.com/fast-2021-08-30_-_Boss_Time_-_www.FesliyanStudios.com.mp3"
+    loop
+    preload="auto"
+  ></audio>
+
+  <!-- Sound Enable/Disable Button -->
+  <button id="soundBtn">🔇 MUTE</button>
+</body>
+</html>

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+body {
+    font-family: 'VT323', monospace;
+    background: 
+       
+        linear-gradient(rgba(26, 26, 47, 0.8), rgba(26, 26, 47, 0.8)),
+       
+        url('tecLogoLtext.png') center/contain no-repeat,
+        
+        #1a1a2f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+       
+        repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.15) 0px,
+            rgba(0, 0, 0, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+        ),
+        /* Pixel noise */
+        url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvuskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RsinF793Mz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==");
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border: 4px solid #fff;
+    box-shadow: 
+        0 0 0 4px #000,
+        0 0 20px rgba(0, 255, 0, 0.7),
+        inset 0 0 10px rgba(0, 255, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    animation: pixelGlitch 0.5s steps(2) infinite;
+    backdrop-filter: blur(2px);
+}
+
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8em;
+    color: #ff3355;
+    text-shadow: 
+        3px 3px 0 #000,
+        0 0 10px rgba(255, 51, 85, 0.5);
+    margin: 0 0 30px 0;
+    padding: 10px;
+    border-bottom: 2px solid #00cc66;
+    display: inline-block;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background: #00cc66;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 8px 16px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.1s;
+    box-shadow: 
+        2px 2px 0 #000,
+        inset 1px 1px 0 #fff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #00b359;
+    transform: translate(2px, 2px);
+    box-shadow: 
+        1px 1px 0 #000,
+        inset 1px 1px 0 #fff;
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #000;
+    background: #333;
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 1.2em;
+    box-shadow: inset 2px 2px 0 #666;
+}
+
+input::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00cc66;
+    box-shadow: 
+        inset 2px 2px 0 #666,
+        0 0 5px #00cc66;
+}
+
+a {
+    color: #00cc66;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #00cc66;
+}
+
+/* Pixel Animations */
+@keyframes pixelGlitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+@keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+.rules-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #00cc66;
+    color: white;
+    border: 2px solid #000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 
+      3px 3px 0 #000,
+      inset 1px 1px 0 #fff;
+    z-index: 100;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; 
+    line-height: 1; 
+  }
+  
+  .rules-btn:hover {
+    transform: scale(1.1);
+    background: #ff3355;
+  }
+  
+  .rules-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .rules-overlay.active {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .rules-content {
+    background: #1a1a2f;
+    border: 4px solid #00cc66;
+    padding: 30px;
+    max-width: 500px;
+    width: 80%;
+    position: relative;
+    box-shadow: 
+      0 0 0 4px #000,
+      0 0 20px rgba(0, 255, 0, 0.5);
+  }
+  
+  .rules-logo {
+    display: block;
+    width: 200px;         /* عرض مناسب واضح */
+    max-width: 100%;      /* ما يتعدى الصندوق */
+    height: auto;         /* يحافظ على الشكل */
+    margin: 0 auto 20px;
+    image-rendering: pixelated;
+    object-fit: contain;
+  }
+  
+  
+  
+  .rules-content h2 {
+    color: #ff3355;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .rules-list {
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 1.3em;
+    line-height: 1.6;
+    padding-left: 20px;
+  }
+  
+  .rules-list li {
+    margin-bottom: 10px;
+  }
+  
+  .close-rules {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff3355;
+    color: white;
+    border: 2px solid #000;
+    width: 30px;
+    height: 30px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    box-shadow: 
+      2px 2px 0 #000,
+      inset 1px 1px 0 #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    line-height: 1;
+  }
+  #soundToggle {
+    transition: all 0.3s;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  #soundToggle:hover {
+    background: #ff3355 !important;
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 #000 !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    body {
+        background: 
+            linear-gradient(rgba(26, 26, 47, 0.8), rgba(26, 26, 47, 0.8)),
+            url('1.png') center/contain no-repeat,
+            #1a1a2f !important;
+        overflow: auto;
+        min-height: 100vh;
+        padding: 20px;
+        background-attachment: fixed;
+    }
+
+    body::before {
+        z-index: 1;
+        opacity: 0.2;
+    }
+
+    .container {
+        z-index: 2;
+        position: relative;
+        width: 95%;
+        max-width: 100%;
+        backdrop-filter: blur(1px);
+    }
+}
